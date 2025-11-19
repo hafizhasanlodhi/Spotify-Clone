@@ -114,8 +114,50 @@ nav ul li {
   transition: opacity 0.4s ease-in;
 }
 
-@media only screen and (max-width: 1100px) {
-  body {
-    background-color: red;
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+    flex-direction: column;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .songItem {
+    height: 60px;
+  }
+
+  .songItem img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  nav ul li {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  #myProgressBar {
+    width: 95vw;
+  }
+
+  .songInfo {
+    left: 5vw;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .songItem {
+    font-size: 12px;
+  }
+
+  .icons i {
+    font-size: 2rem;
   }
 }
